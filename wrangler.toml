@@ -1,0 +1,12 @@
+name = "whatsapp-bot-queue"
+main = "src/index.js"
+compatibility_date = "2024-03-25"
+
+[[queue]]
+queue = "whatsapp-messages"
+max_batch_size = 10
+max_batch_timeout = 30
+
+[vars]
+SUPABASE_URL = "{supabase_url}"
+WHATSAPP_ACCESS_TOKEN = "{whatsapp_token}"
