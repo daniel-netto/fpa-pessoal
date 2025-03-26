@@ -1,17 +1,8 @@
 name = "whatsapp-bot-queue"
-main = "src/index.js"  # Adicione esta linha se não existir
+main = "src/index.js"
 compatibility_date = "2024-03-25"
 
-[[queue]]
-queue = "whatsapp-messages"
-max_batch_size = 100
-max_batch_timeout = 30
-
 [vars]
-# Remova as linhas de secrets, pois elas serão gerenciadas no GitHub
-# SUPABASE_URL = "{{ secrets.SUPABASE_URL }}"
-# WHATSAPP_ACCESS_TOKEN = "{{ secrets.WHATSAPP_ACCESS_TOKEN }}"
-
-# Adicione variáveis de ambiente diretamente
-SUPABASE_URL = ""  # Você preencherá no GitHub Secrets
-WHATSAPP_ACCESS_TOKEN = ""  # Você preencherá no GitHub Secrets
+SUPABASE_URL = "{{ secrets.SUPABASE_URL }}"
+SUPABASE_TOKEN = "{{ secrets.SUPABASE_TOKEN }}"
+WHATSAPP_ACCESS_TOKEN = "" # Você preencherá no GitHub Secrets
