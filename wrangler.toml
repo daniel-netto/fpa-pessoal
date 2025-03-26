@@ -8,5 +8,5 @@ max_batch_size = 10
 max_batch_timeout = 30
 
 [vars]
-SUPABASE_URL = "{supabase_url}"
-WHATSAPP_ACCESS_TOKEN = "{whatsapp_token}"
+SUPABASE_URL = "https://gkvltmoswnobnpflqefe.supabase.co"
+WHATSAPP_ACCESS_TOKEN = "EAAaPeDrO0rcBOwa3P9o7TlLNIZC2wPuUZABug1ltRXeTAH06TQoX1p8CSxoky1ALKNJVfqb52wBdD5VqkEm2XFpDHMmgZBxZCbAZCgOEqVVbnwpWDyaM8DTTZCBKJADfewGaxOLu5b5YMWlsJfKF9vnBduY2ZBw3iMI2ZBAudWcbulpKM5BPw2fVXJgaSB765XZBi9sXXiMDoMZATkfXfZC4izmDDeVffwu5XtEG6kJ4VZCUKN8ZD"
