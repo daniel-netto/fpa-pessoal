@@ -4,11 +4,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "deploy": "wrangler deploy"
+    "deploy": "wrangler deploy",
+    "build": "npm install",
+    "start": "wrangler dev"
   },
   "dependencies": {},
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20240223.0",
-    "wrangler": "^3.38.0"
+    "@cloudflare/workers-types": "4.20240223.0",
+    "wrangler": "3.38.0"
   }
 }
