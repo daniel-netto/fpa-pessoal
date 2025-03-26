@@ -52,3 +52,19 @@ def send_whatsapp_message(to, text):
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port, debug=False)
+
+
+def webhook_handler(request):
+    # URL do Worker Cloudflare (será gerada após deploy)
+    CLOUDFLARE_WORKER_URL = os.getenv('CLOUDFLARE_WORKER_URL')
+    
+    message_data = request.json()
+    
+    # Enviar mensagem para fila do Cloudflare
+    response = requests.post(
+        CLOUDFLARE_WORKER_URL, 
+        json=message_data,
+        headers={'Content-Type': 'application/json'}
+    )
+    
+    return {'status': 'success'}
