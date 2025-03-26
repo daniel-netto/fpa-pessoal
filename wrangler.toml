@@ -5,4 +5,4 @@ compatibility_date = "2024-03-25"
 [vars]
 SUPABASE_URL = "{{ secrets.SUPABASE_URL }}"
 SUPABASE_TOKEN = "{{ secrets.SUPABASE_TOKEN }}"
-WHATSAPP_ACCESS_TOKEN = "" # Você preencherá no GitHub Secrets
+WHATSAPP_ACCESS_TOKEN = "{{ secrets.WHATSAPP_ACCESS_TOKEN }}"
