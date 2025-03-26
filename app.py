@@ -5,7 +5,7 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 VERIFY_TOKEN = os.environ.get("SEU_TOKEN_VERIFICACAO")
-WHATSAPP_TOKEN = os.environ.get("EAAaPeDrO0rcBOwa3P9o7TlLNIZC2wPuUZABug1ltRXeTAH06TQoX1p8CSxoky1ALKNJVfqb52wBdD5VqkEm2XFpDHMmgZBxZCbAZCgOEqVVbnwpWDyaM8DTTZCBKJADfewGaxOLu5b5YMWlsJfKF9vnBduY2ZBw3iMI2ZBAudWcbulpKM5BPw2fVXJgaSB765XZBi9sXXiMDoMZATkfXfZC4izmDDeVffwu5XtEG6kJ4VZCUKN8ZD")  # Token da API do WhatsApp
+WHATSAPP_TOKEN = os.environ.get(WHATSAPP_ACCESS_TOKEN)
 
 WHATSAPP_API_URL = "https://graph.facebook.com/v22.0/me/messages"
 
